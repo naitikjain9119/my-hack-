@@ -260,16 +260,24 @@
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
         import { getDatabase, ref, push, update, onValue } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js";
 
-        // FIREBASE CONFIG
-        const firebaseConfig = {
-            apiKey: "AIzaSyA-1EARc30IYCOHuupz1diVhP5IFZjbrSs",
-            authDomain: "my-website-8c29c.firebaseapp.com",
-            databaseURL: "https://my-website-8c29c-default-rtdb.firebaseio.com",
-            projectId: "my-website-8c29c",
-            storageBucket: "my-website-8c29c.firebasestorage.app",
-            messagingSenderId: "938892629268",
-            appId: "1:938892629268:web:b9875b61f7b5b038d71e01"
-        };
+        // Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyAElPv2M7vQCFJDM2WcedqStUPWOQLM5qs",
+  authDomain: "hacking-code-7cc15.firebaseapp.com",
+  databaseURL: "https://hacking-code-7cc15-default-rtdb.firebaseio.com",
+  projectId: "hacking-code-7cc15",
+  storageBucket: "hacking-code-7cc15.firebasestorage.app",
+  messagingSenderId: "977452112251",
+  appId: "1:977452112251:web:cb5a436e5de0a605fbc5de"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 
         const app = initializeApp(firebaseConfig);
         const db = getDatabase(app);
